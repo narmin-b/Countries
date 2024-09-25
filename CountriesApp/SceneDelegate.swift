@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let loginController = UIStoryboard.init(name: "Register", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController ?? LoginViewController()
         
-        // let countryController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CountryViewController") as? CountryViewController ?? CountryViewController()
+        let countryController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CountryViewController") as? CountryViewController ?? CountryViewController()
         
         let navigationController = UINavigationController(rootViewController: loginController)
         
